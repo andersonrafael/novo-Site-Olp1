@@ -1,0 +1,28 @@
+
+header h1{
+    background-color: rgb(80, 78, 78);
+}
+header h1 img{
+    width: 12%;
+    margin: 0 0 0 60px;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 80px;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 25px;
+    
+}
+nav a{
+    text-transform: uppercase;
+    color: rgb(122, 228, 228);
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    
+}
