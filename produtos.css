@@ -1,10 +1,28 @@
-
-header h1{
-    background-color: rgb(80, 78, 78);
+   
+body {background: #05baec; /* browsers sem suporte a css3 */}
+ 
+body {background: -webkit-gradient(linear, left top, right top, from(#000000), to(#012c2e));/* webkit browsers */ }
+ 
+body {background: -moz-linear-gradient(left, #31311e, #181317);/* firefox3.6+ */}
+ 
+body { filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='#C2C2C2', EndColorStr=' #FFFFFF');/* IE */
+ 
 }
+
+.OLP-BR{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.imagem4:hover{
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+}
+
+
 header h1 img{
     width: 13%;
-    margin: 0 0 0 60px;
+    margin: 30PX 0 0 100px;
 }
 
 nav{
@@ -19,10 +37,9 @@ nav li{
 }
 nav a{
     text-transform: uppercase;
-    color: rgb(122, 228, 228);
+    color: white;
     font-family: 'Lobster', cursive;
     font-weight: bold;
     font-size: 20px;
     text-decoration: none;
-    
 }
