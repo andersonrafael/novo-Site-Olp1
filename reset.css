@@ -22,6 +22,7 @@ time, mark, audio, video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    list-style: none;   
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -31,6 +32,15 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
 }
+a{
+    cursor: pointer;
+    opacity: 0.92;
+    text-decoration: none;
+}
+a :hover{
+    opacity: 1;
+}
+
 ol, ul {
     list-style: none;
 }

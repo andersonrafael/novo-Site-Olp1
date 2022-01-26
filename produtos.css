@@ -1,43 +1,33 @@
    
 body {background: #05baec; /* browsers sem suporte a css3 */}
- 
 body {background: -webkit-gradient(linear, left top, right top, from(#000000), to(#012c2e));/* webkit browsers */ }
- 
 body {background: -moz-linear-gradient(left, #31311e, #181317);/* firefox3.6+ */}
- 
 body { filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='#C2C2C2', EndColorStr=' #FFFFFF');/* IE */
- 
 }
+ h1 img
+{
+    width: 50%;
+    margin: 35px 0 30px 50px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    top: 0%;
+    left: 0%;
+    align-items: center;
+    padding: 25px 50px;
+}
+header nav{
+    display: flex;
 
-.OLP-BR{
-    transition: all 0.5s;
-    cursor: pointer;
 }
-
-header h1 img{
-    width: 13%;
-    margin: 30PX 0 0 100px;
-}
-
-nav{
-    position: absolute;
-    top: 110px;
-    right: 80px;
-}
-nav li{
-    display: inline;
-    margin: 0 0 0 25px;
-    
-}
-nav a {
+ nav a{
+    color: rgb(253, 252, 252);
     text-transform: uppercase;
-    color: white;
-    font-family: 'Lobster', cursive;
-    font-weight: bold;
-    text-decoration:    none;
-    font-size: 20px;
-    width:483px;
-    height:298px;
-
+    font-size: 25px;
+    font-family:'Cairo', sem serifa,'Maçã caseira', cursive,'Lobster',cursive;  
+    padding: 10px;
+    margin: 5px;
+    align-items: flex-end;
 }
 
