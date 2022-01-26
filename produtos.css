@@ -4,30 +4,31 @@ body {background: -webkit-gradient(linear, left top, right top, from(#000000), t
 body {background: -moz-linear-gradient(left, #31311e, #181317);/* firefox3.6+ */}
 body { filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='#C2C2C2', EndColorStr=' #FFFFFF');/* IE */
 }
- h1 img
-{
-    width: 50%;
-    margin: 35px 0 30px 50px;
-}
+
+
 header{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 10px;
     display: flex;
     justify-content: space-between;
-    top: 0%;
-    left: 0%;
-    align-items: center;
-    padding: 25px 50px;
+    padding: 20px 50px;
 }
-header nav{
-    display: flex;
-
-}
- nav a{
-    color: rgb(253, 252, 252);
+header img{width: 200px}
+header nav{display: flex;}
+header li a{
+    color: rgb(0, 0, 0);
     text-transform: uppercase;
     font-size: 25px;
     font-family:'Cairo', sem serifa,'Maçã caseira', cursive,'Lobster',cursive;  
-    padding: 10px;
-    margin: 5px;
-    align-items: flex-end;
+}
+header li{margin: 0px 20px;}
+header li:first-child{margin-left: 0;}
+header li:last-child{margin-right: 0;}
+@media(max-width:700px){
+    header{
+        flex-direction: column;
+    }
 }
 
