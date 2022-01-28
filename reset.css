@@ -35,7 +35,7 @@ body {
 }
 a{
     cursor: pointer;
-    opacity: 0.92;
+    opacity: 0.9;
     text-decoration: none;
 }
 a :hover{
