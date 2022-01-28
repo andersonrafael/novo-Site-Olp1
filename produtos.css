@@ -9,7 +9,7 @@ header{
     padding: 20px 50px;
      background-image: linear-gradient(to bottom, #4fffdc, white);
 }
-header img{width: 200px}
+header img{width: 180px}
 header nav{display: flex;}
 header li a{
     color: rgb(0, 0, 0);
