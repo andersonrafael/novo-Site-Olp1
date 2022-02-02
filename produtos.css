@@ -2,31 +2,32 @@ header{
     width: 100%;
     position: absolute;
     top: 0px;
-    left: 0px;
+    left: 0px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-     background-image: linear-gradient(to bottom, #4fffdc, white);
+    background-image: linear-gradient(to bottom, #07c0f8,#71d4f1,#bbe9f7, white)
 }
 header img{width: 180px}
 header nav{display: flex;}
 header li a{
     color: rgb(0, 0, 0);
     text-transform: uppercase;
-    font-size: 20px;
-    font-family:'Cairo', sem serifa,'Maçã caseira', cursive,'Lobster',cursive;  
-}
+    font-size: 21px;
+    font-family:'Cairo', sem serifa,'Maçã caseira', cursive,'Lobster',cursive;}
 header li{margin: 0px 20px;}
 header li:first-child{margin-left: 10px;}
 header li:last-child{margin-right: 80px;}
 @media(max-width:700px){
-    header{
-        flex-direction: column;
-    }
-    header img{
-        margin-bottom: 15px;
-    }
+    header{flex-direction: column;}
+    header img{margin-bottom: 20px;}
 }
 
- 
+.corpo{
+    background-image: url(img/img02.jpeg);
+    background-size: cover; 
+    min-height: 200vh;
+    color: white;
+    display: flex;
+}
