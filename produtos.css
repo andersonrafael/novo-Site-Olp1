@@ -15,7 +15,7 @@ header li a{
     color: rgb(0, 0, 0);
     text-transform: uppercase;
     font-size: 21px;
-    font-family:'Cairo', sem serifa,'Maçã caseira', cursive,'Lobster',cursive;}
+    font-family:'Cairo','Maçã caseira','Lobster',cursive;}
 header li{margin: 0px 20px;}
 header li:first-child{margin-left: 10px;}
 header li:last-child{margin-right: 80px;}
@@ -25,9 +25,32 @@ header li:last-child{margin-right: 80px;}
 }
 
 .corpo{
-    background-image: url(img/img02.jpeg);
+    background-image: url(img/img01.jpeg);
     background-size: cover; 
-    min-height: 200vh;
-    color: white;
+    min-height: 250vh;
+    width:100%;
+    background-color: white;
     display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 30px;
+  
+    
+}
+.corpo h1{
+    font-family: 'cairo', 'Segoe UI','Open Sans', 'Helvetica Neue';
+    color: rgb(18, 20, 83);
+    font-size: 50px;
+    margin-left: 10px; 
+}
+.corpo h2{
+    font-family: 'cairo', 'Segoe UI','Open Sans', 'Helvetica Neue';
+    font-size: 30px;
+    margin-left: 10px; 
+    color: rgb(18, 20, 83);
+}
+
+.corpo a{
+    margin-left: 10px;
 }
