@@ -1,42 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ohlala Print</title>
-    <link rel="stylesheet" href="reset.css">
-
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ohlala Print — Onde sua ideia vira arte</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https: //fonts.googleapis.com/css2? family= Cairo:wght@800 & família= Caseiro+Maçã &family= Lagosta & display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;600;800&family=Lobster&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="produtos.css">
+    <link rel="icon" href="https://i.ibb.co/5cvTrNx/OLP-black.png" />
 
+    <!-- external styles -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
     <header>
-        </style>
-        <h1><img src="https://i.ibb.co/5cvTrNx/OLP-black.png" alt="OLP-black" border="1"></h1>
-        <nav>
-            <li><a href="index.html">home</a></li>
-            <li><a href="">Produtos</a></li>
-            <li><a href="https://wa.me/558599024521?text=%F0%9F%93%8DOl%C3%A1%21+Este+%C3%A9+um+contato+via+Insta."
-                    target="_blank">Pedidos</a></li>
-            <li><a href="">Instituição</a></li>
-            <li><a href="https://goo.gl/maps/xVh9JAEyBXViRd46A" target="_blank">Localização</a></li>
-        </nav>
+        <div class="container">
+            <div class="brand">
+                <a href="index.html"><img src="https://i.ibb.co/5cvTrNx/OLP-black.png" alt="Ohlala Print" /></a>
+            </div>
+            <nav aria-label="Menu principal">
+                <a href="#home">Home</a>
+                <a href="#produtos">Produtos</a>
+                <a href="#sobre">Instituição</a>
+                <a href="https://goo.gl/maps/xVh9JAEyBXViRd46A" target="_blank" rel="noopener">Localização</a>
+                <a href="https://wa.me/558599024521?text=Ol%C3%A1%21+Quero+fazer+um+pedido" target="_blank"
+                    rel="noopener" class="btn">Pedidos</a>
+            </nav>
+            <button class="menu-toggle" aria-expanded="false" aria-label="Abrir menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
     </header>
-    <section class="corpo">
-        <h1>Onde sua ideia vira arte</h1>
-        <h2>Referência em fardamentos</h2>
-        <a class="btn" href="">Saiba mais</a>
-    </section>
 
+    <main>
+        <section id="home" class="hero">
+            <div class="inner">
+                <span class="kicker reveal">Impressões & Fardamentos</span>
+                <h1 class="reveal">Onde sua ideia <span
+                        style="background:linear-gradient(90deg,#6f8efb,#8be1c9);-webkit-background-clip:text;background-clip:text;color:transparent">vira
+                        arte</span></h1>
+                <h2 class="reveal">Referência em fardamentos, brindes e personalização para sua marca.</h2>
 
+                <div class="cta-row reveal">
+                    <a class="btn" href="#produtos">Ver produtos</a>
+                    <a class="btn secondary" href="#sobre">Saiba mais</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="produtos" class="cards">
+            <div class="grid">
+                <!-- product cards omitted for brevity; reuse images as needed -->
+                <article class="card reveal" aria-labelledby="p1">
+                    <img src="https://images.unsplash.com/photo-1582719478250-0f1f30e6a404?auto=format&fit=crop&w=800&q=60"
+                        alt="Uniformes personalizados" loading="lazy">
+                    <h3 id="p1">Fardamentos Personalizados</h3>
+                    <p>Uniformes resistentes, impressão de alta definição e acabamento profissional para sua equipe.</p>
+                </article>
+
+                <article class="card reveal" aria-labelledby="p2">
+                    <img src="https://images.unsplash.com/photo-1606813903316-9a6f4f5f8b9a?auto=format&fit=crop&w=800&q=60"
+                        alt="Camisetas personalizadas" loading="lazy">
+                    <h3 id="p2">Camisetas & Camisas</h3>
+                    <p>Cortes e malhas variados. Impressão digital, silk e bordado — escolha a melhor técnica para seu
+                        projeto.</p>
+                </article>
+
+            </div>
+
+            <!-- Order form integrated -->
+            <div class="order-form reveal" style="margin-top:28px">
+                <h3>Faça seu pedido rápido</h3>
+                <p class="note">Preencha os dados abaixo e escolha enviar pelo WhatsApp (mais rápido) ou por email.</p>
+                <form id="orderForm">
+                    <div class="field">
+                        <label for="name">Nome completo</label>
+                        <input id="name" name="name" type="text" required>
+                    </div>
+                    <div class="field">
+                        <label for="phone">Telefone (WhatsApp)</label>
+                        <input id="phone" name="phone" type="tel" required placeholder="(xx) xxxxx-xxxx">
+                    </div>
+                    <div class="field">
+                        <label for="product">Selecione o produto</label>
+                        <select id="product" name="product">
+                            <option>Fardamento personalizado</option>
+                            <option>Camiseta personalizada</option>
+                            <option>Brinde (caneca, ecobag)</option>
+                            <option>Embalagem / Rótulo</option>
+                            <option>Outro (descreva abaixo)</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="quantity">Quantidade</label>
+                        <input id="quantity" name="quantity" type="number" min="1" value="1">
+                    </div>
+                    <div class="field">
+                        <label for="details">Detalhes do pedido / cores / tamanhos</label>
+                        <textarea id="details" name="details"
+                            placeholder="Ex: 10 camisetas P/M/G - estampa frontal - cor branca"></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn">Enviar pedido</button>
+                        <button type="button" class="btn ghost"
+                            onclick="window.open('https://wa.me/558599024521?text=Ol%C3%A1%21+Quero+fazer+um+pedido', '_blank')">Abrir
+                            WhatsApp</button>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+
+        <section id="sobre" style="padding:60px 20px;max-width:1100px;margin:0 auto">
+            <div class="reveal">
+                <h2 style="font-size:28px;margin-bottom:12px">Quem somos</h2>
+                <p style="color:#3b475e;">Somos uma equipe dedicada a transformar ideias em produtos tangíveis — com
+                    qualidade, prazo e responsabilidade. Atendemos empresas e pequenos empreendedores que buscam
+                    diferenciação no mercado.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="https://i.ibb.co/5cvTrNx/OLP-black.png" alt="Ohlala Print" style="width:120px">
+                <div class="small">Ohlala Print © <span id="year"></span> — Todos os direitos reservados</div>
+                <div class="small">Rua / Endereço — Cidade, Estado</div>
+            </div>
+
+            <div style="display:flex;gap:24px;align-items:flex-start">
+                <div>
+                    <div style="font-weight:700;margin-bottom:8px">Contato</div>
+                    <div class="small">Telefone: (85) 99024-521</div>
+                    <div class="small">Email: contato@ohlalha.com (exemplo)</div>
+                </div>
+
+                <div>
+                    <div style="font-weight:700;margin-bottom:8px">Links</div>
+                    <div class="small"><a href="#produtos">Produtos</a></div>
+                    <div class="small"><a href="#sobre">Quem somos</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a class="whatsapp-fab" href="https://wa.me/558599024521?text=Ol%C3%A1%21+Quero+fazer+um+pedido"
+        title="Fazer pedido via WhatsApp" target="_blank" rel="noopener">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+    <script src="main.js" defer></script>
 </body>
 
 </html>
